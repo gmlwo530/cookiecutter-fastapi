@@ -1,0 +1,6 @@
+[run]
+source =
+    app/
+omit=
+    app/__init__.py
+    app/**/__init__.py

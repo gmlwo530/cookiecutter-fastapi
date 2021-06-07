@@ -1,4 +1,8 @@
 {
     "project_name": "Base Project",
-    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}"
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "open_source_license": ["MIT license","ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
+    "author_name": "gmlwo530",
+    "email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@example.com",
+    "package_management": ["pip", "poetry"]
 }
