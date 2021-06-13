@@ -10,9 +10,9 @@ def remove(filepath):
 
 
 if "{{ cookiecutter.package_management }}" == "pip":
-    remove(os.path.join(os.getcwd(), "{{cookiecutter.project_slug}}", "requirements"))
-elif "{{ cookiecutter.package_management }}" == "poetry":
     remove(os.path.join(os.getcwd(), "{{cookiecutter.project_slug}}", "pyproject.toml"))
+elif "{{ cookiecutter.package_management }}" == "poetry":
+    remove(os.path.join(os.getcwd(), "{{cookiecutter.project_slug}}", "requirements"))
 
 
 print("Done!! Now, you can develop FastAPI project!!")
